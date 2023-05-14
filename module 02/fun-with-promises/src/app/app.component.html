@@ -1,0 +1,9 @@
+<button (click)="go()">Go</button>
+
+<hr>
+
+<div *ngIf="isPromiseRunning">
+  <h1>Promise created, please tell me what to do</h1>
+  <input type="number" #theNumber>
+  <button (click)="onCompleteClicked(theNumber.valueAsNumber)">Complete the promise</button>
+</div>
