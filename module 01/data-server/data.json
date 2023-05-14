@@ -1,0 +1,24 @@
+{
+    "customers": [
+        {
+            "id": 1, 
+            "name": "John Smith", 
+            "balance": 400
+        }, 
+        {
+            "id": 2, 
+            "name": "Jane Smith", 
+            "balance": 500
+        }, 
+        {
+            "id": 3, 
+            "name": "Pail Smith", 
+            "balance": 500
+        }, 
+        {
+            "id": 4, 
+            "name": "George Smith", 
+            "balance": 250
+        } 
+    ]
+}
