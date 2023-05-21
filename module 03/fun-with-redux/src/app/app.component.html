@@ -1,6 +1,13 @@
 <div *ngIf="currentQuestion() as question">
     <h1>{{question.caption}}</h1>
-    <div *ngFor="let answer of question.answers">
+    <div *ngFor="let answer of question.answers; let i = index"
+        (click)="onAnswerQuestion(i)"
+    >
         {{answer}}
     </div>
 </div>
+
+<button (click)="onReset()">Reset</button>
+<button (click)="onGetNewQuestions()">Get new questions</button>
+<hr>
+<h1>Message: {{message()}}</h1>
